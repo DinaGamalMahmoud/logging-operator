@@ -64,6 +64,7 @@ type FluentbitAgentList struct {
 type FluentbitSpec struct {
 	LoggingRef string `json:"loggingRef,omitempty"`
 
+	EnableVarLibContainers *bool           `json:"enableVarLibContainers,omitempty"`
 	DaemonSetAnnotations map[string]string `json:"daemonsetAnnotations,omitempty"`
 	Annotations          map[string]string `json:"annotations,omitempty"`
 	Labels               map[string]string `json:"labels,omitempty"`
